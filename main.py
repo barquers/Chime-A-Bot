@@ -1,4 +1,5 @@
 import discord
+import config
 from discord.ext import tasks
 import asyncio
 import datetime
@@ -62,5 +63,4 @@ async def hourly_music():
 
     await voice_client.disconnect()
 
-# Replace 'YOUR_TOKEN' with your bot token
-client.run('YOUR_TOKEN')
+client.run(config.BOT_TOKEN)
